@@ -41,5 +41,10 @@ fun SiswaApp(navController: NavHostController = rememberNavController()) {
                 type = NavType.IntType
             })
         ) {
+            DetailScreen(
+                navigateBack = { navController.navigateUp() },
+                navigateToEditItem = { /* Nanti diimplementasikan */ }
+            )
+        }
     }
 }
