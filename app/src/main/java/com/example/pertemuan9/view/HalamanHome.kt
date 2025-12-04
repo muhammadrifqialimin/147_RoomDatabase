@@ -64,7 +64,6 @@ fun HomeScreen(
             itemSiswa = uiStateSiswa.listSiswa,
             modifier = Modifier
                 .padding(innerPadding)
-                .fillMaxSize()
                 .fillMaxSize(),
             onSiswaClick = onDetailClick // Pass ke BodyHome
         )
@@ -74,6 +73,7 @@ fun HomeScreen(
 @Composable
 fun BodyHome(
     itemSiswa: List<Siswa>,
+    onSiswaClick: (Int) -> Unit, // Tambahkan parameter ini
     modifier: Modifier=Modifier
 ){
     Column(
