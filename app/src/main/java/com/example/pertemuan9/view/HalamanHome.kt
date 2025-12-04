@@ -65,6 +65,8 @@ fun HomeScreen(
             modifier = Modifier
                 .padding(innerPadding)
                 .fillMaxSize()
+                .fillMaxSize(),
+            onSiswaClick = onDetailClick // Pass ke BodyHome
         )
     }
 }
