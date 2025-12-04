@@ -107,7 +107,9 @@ fun ListSiswa(
         items(items = itemSiswa, key = { it.id }) { person ->
             DataSiswa(
                 siswa = person,
-                modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_small))
+                modifier = Modifier
+                    .padding(dimensionResource(id = R.dimen.padding_small))
+                    .clickable { onSiswaClick(person.id) } // Tambahkan aksi klik
             )
         }
     }
