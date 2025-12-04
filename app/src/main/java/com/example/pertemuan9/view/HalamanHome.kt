@@ -99,6 +99,7 @@ fun BodyHome(
 @Composable
 fun ListSiswa(
     itemSiswa : List<Siswa>,
+    onSiswaClick: (Int) -> Unit, // Tambahkan parameter ini
     modifier: Modifier=Modifier
 ){
     LazyColumn(modifier = Modifier){
