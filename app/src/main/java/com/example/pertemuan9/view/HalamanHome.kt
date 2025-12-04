@@ -103,7 +103,6 @@ fun ListSiswa(
     modifier: Modifier=Modifier
 ){
     LazyColumn(modifier = Modifier){
-        // Pastikan itemSiswa bertipe List<Siswa>
         items(items = itemSiswa, key = { it.id }) { person ->
             DataSiswa(
                 siswa = person,
@@ -115,6 +114,7 @@ fun ListSiswa(
     }
 }
 
+// DataSiswa sama seperti sebelumnya
 @Composable
 fun DataSiswa(
     siswa: Siswa,
