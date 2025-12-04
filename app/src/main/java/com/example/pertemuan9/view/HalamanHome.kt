@@ -20,7 +20,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pertemuan9.R
-// IMPORT PENTING: Pastikan Siswa di-import dari room
 import com.example.pertemuan9.room.Siswa
 import com.example.pertemuan9.view.route.DestinasiHome
 import com.example.pertemuan9.view.uicontroller.SiswaTopAppBar
