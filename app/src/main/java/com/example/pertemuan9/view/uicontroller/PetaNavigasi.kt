@@ -7,7 +7,6 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-// Pastikan import HalamanHome dan HalamanEntry benar
 import androidx.navigation.navArgument
 import com.example.pertemuan9.view.EntrySiswaScreen
 import com.example.pertemuan9.view.HomeScreen
@@ -36,5 +35,11 @@ fun SiswaApp(navController: NavHostController = rememberNavController()) {
                 navigateBack = { navController.popBackStack() }
             )
         }
+        composable(
+            route = DestinasiDetail.routeWithArgs,
+            arguments = listOf(navArgument(DestinasiDetail.itemIdArg) {
+                type = NavType.IntType
+            })
+        ) {
     }
 }
